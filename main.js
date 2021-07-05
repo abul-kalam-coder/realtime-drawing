@@ -8,7 +8,7 @@ function setup(){
 video=createCapture(VIDEO);
 video.size(560,500);
 canvas=createCanvas(560,500);
-canvas.position(760,150);
+canvas.position(760,170);
 video.position(150,150);
 poseNet=ml5.poseNet(video,modelLoaded);
 poseNet.on('pose',gotResults);
